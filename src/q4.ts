@@ -4,9 +4,23 @@
 // 輸出說明: 請直接console.log出答案
 // 提示: String.includes, String.split
 
-
 let calc = function (calcString: string) {
+    let ans = calcString.split("")
+    switch (ans[1]) {
+        case '+':
+            console.log (parseInt(ans[0]) + parseInt(ans[2]));
+            break;
+        case '-':
+            console.log (parseInt(ans[0]) - parseInt(ans[2]));
+            break;
+        case '*':
+            console.log (parseInt(ans[0]) * parseInt(ans[2]));
+            break;
+        case '/':
+            console.log (parseInt(ans[0]) / parseInt(ans[2]));
+            break;
 
+    }
 }
 
 calc('8*2')
